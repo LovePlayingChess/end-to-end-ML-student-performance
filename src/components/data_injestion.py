@@ -8,6 +8,7 @@ from src.exception import CustomException
 
 from src.components.data_transformation import DataTransformation
 from src.components.data_transformation import DataTransformationConfig
+from src.components.training_model import ModelTrainerConfig, ModelTrainer
 
 @dataclass
 class DataInjestionConfig:
@@ -52,4 +53,7 @@ if __name__ == "__main__":
     
     data_transformation = DataTransformation()
     # data_transformation.get_data_transformer_obj()
-    data_transformation.Initiate_Data_Transformation(train_data, test_data)
+    train_array, test_array, _ = data_transformation.Initiate_Data_Transformation(train_data, test_data)
+
+    model_trainer = ModelTrainer()
+    print(model_trainer.initiate_model_trainer(train_array, test_array))
