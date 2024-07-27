@@ -1,6 +1,6 @@
 import sys
 import logging
-from .logger import logging
+from src.logger import logging
 
 def error_message_details(error, error_detail: sys):
     # need filename, line number, string_error_message
