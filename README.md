@@ -14,3 +14,9 @@ type of lunch, the availability of test preparation, race and ethnicity, etc.
 7. creating .pkl files
 8. Maintaining logs (honestly one of the most vital parts in my debugging strategy)
 9. Custom Exception Handling
+
+# Acknowledgement
+As this is my first implementation and deployment of an end to end ML model, I give 
+huge credit to Data Scientist Krish Naik and his youtube channel. He provides
+incredible resources and materials in teaching how to build and deploy end to end 
+ML models. A link to his github : https://github.com/krishnaik06/
